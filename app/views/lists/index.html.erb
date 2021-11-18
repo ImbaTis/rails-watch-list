@@ -1,0 +1,16 @@
+<h1>My lists</h1>
+
+<ul id="lists">
+  <% @lists.each do |list| %>
+    <li>
+      <%# <%= list.name %>
+      <p>haha</p>
+    </li>
+  <% end %>
+</ul>
+
+<hr>
+
+<%= link_to new_list_path do %>
+  <i class="fa fa-plus"></i> Add a new list
+<% end %>
